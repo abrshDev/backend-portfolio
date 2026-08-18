@@ -1,0 +1,127 @@
+{
+  "sectionTitles": {
+    "skills": "Skills",
+    "experience": "Experience",
+    "education": "Education",
+    "projects": "Projects",
+    "achievements": "Highlights",
+    "activities": "Additional Experience",
+    "contact": "Contact"
+  },
+  "navLinks": [
+    { "href": "#skills", "label": "Skills" },
+    { "href": "#experience", "label": "Experience" },
+    { "href": "#projects", "label": "Projects" },
+    { "href": "#contact", "label": "Contact" }
+  ],
+  "personal": {
+    "name": {
+      "first": "Abrham",
+      "last": "Melkamu"
+    },
+    "title": "Full-Stack Software Engineer",
+    "bio": "Full-stack software engineer with 3+ years of professional and freelance experience building reliable, scalable, and user-focused web applications across the complete development lifecycle.",
+    "currentWork": {
+      "text": "Currently building the",
+      "company": "IP Guestlist Application",
+      "url": ""
+    },
+    "email": "abrshmelkamu3@gmail.com",
+    "phone": "+251986607884",
+    "location": "Addis Ababa, Ethiopia",
+    "nationality": "Ethiopia",
+    "languages": [],
+    "resumePath": "/resume.pdf",
+    "logoPath": "/icon.svg",
+    "navName": "Abrham Melkamu",
+    "footerName": "Abrham Melkamu",
+    "repoUrl": ""
+  },
+  "socials": [],
+  "secondarySocials": [],
+  "terminal": [
+    { "prompt": "echo $STATUS", "output": "Open to software engineering opportunities" },
+    { "prompt": "echo $LOCATION", "output": "Addis Ababa, Ethiopia" }
+  ],
+  "skills": {
+    "Languages": ["Go", "JavaScript"],
+    "Backend & Architecture": ["Microservices", "gRPC", "CQRS", "DDD", "Temporal"],
+    "Frontend": ["React", "MERN"],
+    "Data & Messaging": ["PostgreSQL", "MySQL", "MongoDB", "Redis", "Kafka", "Firebase", "Firestore"],
+    "Tools & Integrations": ["Docker", "Testcontainers", "SendGrid", "Twilio"]
+  },
+  "skillsFootnote": "Focused on dependable systems from interface to infrastructure.",
+  "experience": [
+    {
+      "company": "Pioneer Labs",
+      "role": "Backend Developer",
+      "period": "Mar 2026 — Jun 2026",
+      "location": "",
+      "tag": "Contract",
+      "points": [
+        "Migrated tenant and user data from Firebase and Firestore to PostgreSQL for a multi-tenant SaaS mailer platform.",
+        "Replaced direct Firestore reads with a CRM HTTP API adapter for tenant identity resolution, decoupling the service from Firestore.",
+        "Designed the PostgreSQL schema and migration scripts supporting the new data layer."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "BSc in Computer Science",
+      "institution": "University of Gondar",
+      "location": "Gondar, Ethiopia",
+      "period": "Graduated Jul 2025",
+      "grade": "",
+      "coursework": []
+    }
+  ],
+  "projects": [
+    {
+      "name": "IP Guestlist Application",
+      "description": "VIP Guestlist Management Platform",
+      "tech": ["Full Stack", "SendGrid", "Twilio"],
+      "url": "",
+      "points": [
+        "Built a platform that streamlines exclusive event applications and administrative workflows.",
+        "Created bulk email and SMS campaigns that generated more than 1,000 high-value applicant submissions.",
+        "Implemented duplicate detection, priority tagging, and conflict resolution to maintain clean applicant data."
+      ]
+    },
+    {
+      "name": "Microservice Platform",
+      "description": "DDD-Based Event-Driven Platform",
+      "tech": ["Go", "Microservices", "CQRS", "Kafka", "PostgreSQL", "Docker"],
+      "url": "",
+      "points": [
+        "Built an event-driven platform with four services, asynchronous messaging, CQRS, and a separate database per service.",
+        "Implemented circuit breakers, retries, dead-letter handling, idempotent consumers, correlation IDs, and graceful shutdown.",
+        "Added integration tests using Testcontainers."
+      ]
+    },
+    {
+      "name": "iGaming RTP Simulator",
+      "description": "Slot Machine Return-to-Player Simulator",
+      "tech": ["Simulation", "Probability", "Statistical Analysis"],
+      "url": "",
+      "points": [
+        "Simulated a three-reel slot machine with weighted random symbols and a configurable payout table.",
+        "Ran more than 100,000 spins while tracking total wagered and paid amounts to calculate actual RTP.",
+        "Compared simulated and theoretical RTP to demonstrate convergence over large sample sizes."
+      ]
+    }
+  ],
+  "achievements": [
+    "Generated more than 1,000 applicant submissions through targeted email and SMS campaigns.",
+    "Designed resilient microservices with idempotency, retries, circuit breaking, and dead-letter handling."
+  ],
+  "activities": [
+    {
+      "title": "Freelance Software Engineer",
+      "description": "Builds end-to-end web applications and collaborates with stakeholders to turn requirements into reliable, performant software."
+    }
+  ],
+  "contact": {
+    "message": "I'm open to full-stack and backend engineering opportunities, freelance work, and interesting collaborations.",
+    "calendlyUrl": ""
+  }
+}

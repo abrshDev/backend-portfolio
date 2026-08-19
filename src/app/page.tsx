@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Nav } from "@/components/Nav";
 import { Terminal, Prompt, Output } from "@/components/Terminal";
 import { Section } from "@/components/Section";
@@ -14,7 +15,7 @@ function CrossLine() {
 }
 
 export default function Home() {
-  const { sectionTitles, personal, socials, terminal, skills, skillsFootnote, experience, education, projects, achievements, activities, contact } = data;
+  const { sectionTitles, personal, socials, terminal, skills, skillsFootnote, experience, education, projects, reviews, achievements, activities, contact } = data;
 
   return (
     <div className="pt-6 pb-6">
@@ -275,6 +276,93 @@ export default function Home() {
                 </article>
               ))}
             </div>
+          </Section>
+
+          {/* ── Client Reviews ── */}
+          <Section id="reviews" title={sectionTitles.reviews}>
+            <div className="mb-8 grid grid-cols-3 border border-neutral-200 dark:border-neutral-800">
+              {[
+                ["3", "Selected contracts"],
+                ["5.0", "Average rating"],
+                ["100%", "Five-star reviews"],
+              ].map(([value, label], index) => (
+                <div
+                  key={label}
+                  className={`px-3 py-5 sm:px-5 ${
+                    index > 0
+                      ? "border-l border-neutral-200 dark:border-neutral-800"
+                      : ""
+                  }`}
+                >
+                  <p className="text-lg sm:text-xl font-semibold text-black dark:text-white">
+                    {value}
+                  </p>
+                  <p className="mt-1 text-[9px] sm:text-[10px] uppercase tracking-wider sm:tracking-[0.16em] text-neutral-400 dark:text-neutral-500">
+                    {label}
+                  </p>
+                </div>
+              ))}
+            </div>
+
+            <div className="grid grid-cols-1 gap-4">
+              {reviews.map((review) => (
+                <article
+                  key={review.title}
+                  className="group overflow-hidden border border-neutral-200 bg-white dark:border-neutral-800 dark:bg-black"
+                >
+                  <div className="flex items-center justify-between gap-4 border-b border-neutral-200 px-4 py-3 dark:border-neutral-800">
+                    <div className="min-w-0">
+                      <div className="flex items-center gap-2">
+                        <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-[#14a800]" />
+                        <h3 className="truncate text-xs font-medium text-black dark:text-white">
+                          {review.title}
+                        </h3>
+                      </div>
+                      <p className="mt-1 truncate pl-3.5 text-[10px] text-neutral-400 dark:text-neutral-500">
+                        {review.subtitle}
+                      </p>
+                    </div>
+                    <div className="shrink-0 text-right">
+                      <p
+                        className="text-[10px] tracking-[0.12em] text-[#14a800]"
+                        aria-label="5 out of 5 stars"
+                      >
+                        ★★★★★
+                      </p>
+                      <p className="mt-1 text-[9px] text-neutral-400 dark:text-neutral-600">
+                        {review.date}
+                      </p>
+                    </div>
+                  </div>
+
+                  <a
+                    href={review.image}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="relative flex h-[260px] items-center justify-center overflow-hidden bg-[#f7f7f8] sm:h-[340px] md:h-[400px]"
+                    aria-label={`View full ${review.title} review`}
+                  >
+                    <Image
+                      src={review.image}
+                      alt={review.alt}
+                      width={review.width}
+                      height={review.height}
+                      sizes="(max-width: 896px) 100vw, 816px"
+                      unoptimized
+                      className="h-full w-full object-contain transition-transform duration-500 ease-out group-hover:scale-[1.01]"
+                    />
+                    <span className="absolute bottom-3 right-3 border border-black/10 bg-white/90 px-2.5 py-1.5 text-[9px] uppercase tracking-widest text-neutral-700 opacity-0 shadow-sm backdrop-blur-sm transition-opacity group-hover:opacity-100">
+                      View full review ↗
+                    </span>
+                  </a>
+                </article>
+              ))}
+            </div>
+
+            <p className="mt-5 text-[10px] leading-relaxed text-neutral-400 dark:text-neutral-600">
+              Screenshots from completed Upwork contracts. Open any review to
+              view it at full resolution.
+            </p>
           </Section>
 
           {/* ── Achievements ── */}

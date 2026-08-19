@@ -16,8 +16,12 @@ export function Section({ id, title, children }: SectionProps) {
           <div className="cross-marker left-full" />
         </div>
       </div>
-      <h2 className="text-sm text-neutral-400 dark:text-neutral-500 uppercase tracking-[0.3em] mb-8 border-b border-neutral-200 dark:border-neutral-800 pb-4">
-        {title}
+      <h2 className="mb-8 flex items-center gap-3 border-b border-neutral-300 pb-5 text-2xl font-bold tracking-tight text-black dark:border-neutral-700 dark:text-white sm:text-3xl">
+        <span
+          className="h-2.5 w-2.5 shrink-0 bg-black dark:bg-white"
+          aria-hidden="true"
+        />
+        <span>{title}</span>
       </h2>
       {children}
     </section>

@@ -4,6 +4,7 @@
     "experience": "Experience",
     "education": "Education",
     "projects": "Projects",
+    "reviews": "Client Reviews",
     "achievements": "Highlights",
     "activities": "Additional Experience",
     "contact": "Contact"
@@ -12,6 +13,7 @@
     { "href": "#skills", "label": "Skills" },
     { "href": "#experience", "label": "Experience" },
     { "href": "#projects", "label": "Projects" },
+    { "href": "#reviews", "label": "Reviews" },
     { "href": "#contact", "label": "Contact" }
   ],
   "personal": {
@@ -22,8 +24,8 @@
     "title": "Full-Stack Software Engineer",
     "bio": "Full-stack software engineer with 3+ years of professional and freelance experience building reliable, scalable, and user-focused web applications across the complete development lifecycle.",
     "currentWork": {
-      "text": "Currently building the",
-      "company": "IP Guestlist Application",
+      "text": "Currently working as a Full-Stack Developer at",
+      "company": "Vertex Technologies",
       "url": ""
     },
     "email": "abrshmelkamu3@gmail.com",
@@ -53,6 +55,30 @@
   "skillsFootnote": "Focused on dependable systems from interface to infrastructure.",
   "experience": [
     {
+      "company": "Vertex Technologies",
+      "role": "Full-Stack Developer",
+      "period": "Present",
+      "location": "",
+      "tag": "Current",
+      "points": [
+        "Build and maintain end-to-end web applications, delivering responsive user interfaces, reliable backend services, and well-structured data integrations.",
+        "Translate product requirements into scalable features while improving performance, maintainability, and reliability across the stack.",
+        "Collaborate with stakeholders and team members to plan, implement, test, and deliver production-ready software."
+      ]
+    },
+    {
+      "company": "IP Guestlist Application",
+      "role": "Full-Stack Developer",
+      "period": "Aug 2025 — Present",
+      "location": "",
+      "tag": "Freelance",
+      "points": [
+        "Built a VIP guestlist management platform that streamlines exclusive event applications and administrative workflows.",
+        "Created and managed bulk email and SMS campaigns with SendGrid and Twilio, generating more than 1,000 high-value applicant submissions.",
+        "Implemented duplicate detection, priority tagging, and conflict resolution to maintain clean, reliable applicant data."
+      ]
+    },
+    {
       "company": "Pioneer Labs",
       "role": "Backend Developer",
       "period": "Mar 2026 — Jun 2026",
@@ -77,17 +103,6 @@
   ],
   "projects": [
     {
-      "name": "IP Guestlist Application",
-      "description": "VIP Guestlist Management Platform",
-      "tech": ["Full Stack", "SendGrid", "Twilio"],
-      "url": "",
-      "points": [
-        "Built a platform that streamlines exclusive event applications and administrative workflows.",
-        "Created bulk email and SMS campaigns that generated more than 1,000 high-value applicant submissions.",
-        "Implemented duplicate detection, priority tagging, and conflict resolution to maintain clean applicant data."
-      ]
-    },
-    {
       "name": "Microservice Platform",
       "description": "DDD-Based Event-Driven Platform",
       "tech": ["Go", "Microservices", "CQRS", "Kafka", "PostgreSQL", "Docker"],
@@ -108,6 +123,38 @@
         "Ran more than 100,000 spins while tracking total wagered and paid amounts to calculate actual RTP.",
         "Compared simulated and theoretical RTP to demonstrate convergence over large sample sizes."
       ]
+    }
+  ],
+  "reviews": [
+    {
+      "title": "Profile-Based App",
+      "subtitle": "Instagram Photo Fetching",
+      "date": "Aug 2025",
+      "image": "/reviews/profile-app-review.jpg",
+      "width": 1024,
+      "height": 695,
+      "alt": "Five-star Upwork review praising Abrham's backend expertise, communication, attention to detail, and reliable delivery",
+      "featured": false
+    },
+    {
+      "title": "App Development",
+      "subtitle": "Client Review",
+      "date": "Oct 2025",
+      "image": "/reviews/app-development-review.jpg",
+      "width": 1024,
+      "height": 278,
+      "alt": "Five-star Upwork review describing Abrham as the hardest-working freelancer the client has hired",
+      "featured": false
+    },
+    {
+      "title": "Gesture App",
+      "subtitle": "Client Review",
+      "date": "Oct 2025",
+      "image": "/reviews/gesture-app-review.jpg",
+      "width": 1024,
+      "height": 420,
+      "alt": "Five-star Upwork review recommending Abrham for going above and beyond to ensure client satisfaction",
+      "featured": false
     }
   ],
   "achievements": [

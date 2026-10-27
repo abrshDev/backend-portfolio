@@ -22,7 +22,7 @@
       "last": "Melkamu"
     },
     "title": "Full-Stack Software Engineer",
-    "bio": "Full-stack software engineer with 3+ years of professional and freelance experience building reliable, scalable, and user-focused web applications across the complete development lifecycle.",
+    "bio": "Full-stack software engineer with 3+ years of professional and freelance experience building end-to-end web applications, architecting scalable solutions, and delivering reliable, user-focused products.",
     "currentWork": {
       "text": "Currently working as a Full-Stack Developer at",
       "company": "Vertex Technologies",
@@ -46,48 +46,60 @@
     { "prompt": "echo $LOCATION", "output": "Addis Ababa, Ethiopia" }
   ],
   "skills": {
-    "Languages": ["Go", "JavaScript"],
-    "Backend & Architecture": ["Microservices", "gRPC", "CQRS", "DDD", "Temporal"],
-    "Frontend": ["React", "MERN"],
-    "Data & Messaging": ["PostgreSQL", "MySQL", "MongoDB", "Redis", "Kafka", "Firebase", "Firestore"],
-    "Tools & Integrations": ["Docker", "Testcontainers", "SendGrid", "Twilio"]
+    "Languages": ["Go", "JavaScript", "TypeScript"],
+    "Backend & Architecture": ["Microservices", "gRPC", "Kafka", "Temporal", "REST APIs", "API Gateway"],
+    "Frontend": ["Next.js", "React", "Tailwind CSS", "shadcn/ui", "MERN"],
+    "Data & Platforms": ["PostgreSQL", "MySQL", "Redis", "Firebase", "Firestore", "SuiteCRM", "Dynamics 365"],
+    "Tools & Integrations": ["Docker", "SendGrid", "Twilio"]
   },
   "skillsFootnote": "Focused on dependable systems from interface to infrastructure.",
   "experience": [
     {
       "company": "Vertex Technologies",
       "role": "Full-Stack Developer",
-      "period": "Present",
+      "period": "May 2026 — Present",
       "location": "",
       "tag": "Current",
       "points": [
-        "Build and maintain end-to-end web applications, delivering responsive user interfaces, reliable backend services, and well-structured data integrations.",
-        "Translate product requirements into scalable features while improving performance, maintainability, and reliability across the stack.",
-        "Collaborate with stakeholders and team members to plan, implement, test, and deliver production-ready software."
+        "Built the frontend and API integration layer of TIMES, a VAT-compliant e-invoicing and ERP platform, connecting a Next.js application to Go microservices for authentication, invoicing, inventory, and analytics through a unified API gateway.",
+        "Delivered live financial dashboards for sales performance, tax liability, and receivables aging, along with print-ready multilingual invoice and receipt templates that meet government EIMS requirements.",
+        "Created a unified design system with shadcn/ui and Tailwind CSS, including mobile-responsive layouts that preserve the desktop experience."
       ]
     },
     {
-      "company": "IP Guestlist Application",
-      "role": "Full-Stack Developer",
-      "period": "Aug 2025 — Present",
+      "company": "Anuva Capital",
+      "role": "Software Engineer",
+      "period": "Mar 2026 — Present",
       "location": "",
-      "tag": "Freelance",
+      "tag": "Contract",
       "points": [
-        "Built a VIP guestlist management platform that streamlines exclusive event applications and administrative workflows.",
-        "Created and managed bulk email and SMS campaigns with SendGrid and Twilio, generating more than 1,000 high-value applicant submissions.",
-        "Implemented duplicate detection, priority tagging, and conflict resolution to maintain clean, reliable applicant data."
+        "Migrated approximately 100 GB of live Dynamics 365 and Leasepath data, including notes and attachments, to self-hosted SuiteCRM before the renewal deadline using a Go client built on the Dynamics Web API.",
+        "Rebuilt opportunity relationships, replaced Dynamics process emails with 13 live SuiteCRM workflows on SendGrid, and created 46 Word templates for sales proposals and funder lease packages.",
+        "Shipped a four-step public credit application portal that creates accounts, contacts, and opportunities, then notifies the assigned sales representative."
       ]
     },
     {
       "company": "Pioneer Labs",
       "role": "Backend Developer",
-      "period": "Mar 2026 — Jun 2026",
+      "period": "Jan 2026 — Jun 2026",
       "location": "",
       "tag": "Contract",
       "points": [
         "Migrated tenant and user data from Firebase and Firestore to PostgreSQL for a multi-tenant SaaS mailer platform.",
         "Replaced direct Firestore reads with a CRM HTTP API adapter for tenant identity resolution, decoupling the service from Firestore.",
         "Designed the PostgreSQL schema and migration scripts supporting the new data layer."
+      ]
+    },
+    {
+      "company": "IP Guestlist Application",
+      "role": "Full-Stack Developer",
+      "period": "Mar 2024 — Aug 2025",
+      "location": "",
+      "tag": "Freelance",
+      "points": [
+        "Built a VIP guestlist management platform that streamlines exclusive event applications and gives administrators one place to review, approve, and manage applicants.",
+        "Ran bulk email and SMS campaigns with SendGrid and Twilio, bringing in more than 2,000 users.",
+        "Implemented duplicate detection, priority tagging, and conflict resolution to keep applicant data clean and help administrators focus on the highest-value applicants."
       ]
     }
   ],
@@ -158,8 +170,9 @@
     }
   ],
   "achievements": [
-    "Generated more than 1,000 applicant submissions through targeted email and SMS campaigns.",
-    "Designed resilient microservices with idempotency, retries, circuit breaking, and dead-letter handling."
+    "Brought more than 2,000 users into the IP Guestlist platform through targeted email and SMS campaigns.",
+    "Migrated approximately 100 GB of business data from Dynamics 365 and Leasepath to self-hosted SuiteCRM before the renewal deadline.",
+    "Delivered 13 SuiteCRM workflows and 46 data-driven Word templates for production sales and funding operations."
   ],
   "activities": [
     {
